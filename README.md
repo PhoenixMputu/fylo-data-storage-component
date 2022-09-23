@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-[Solution](https://phoenixMputu.github.io/Fylo-data-storage-component/)
+[Solution](https://phoenixMputu.github.io/fylo-data-storage-component/)
 
 ## My process
 
