@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(229, 57%, 11%);
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: left;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+main {
+  padding-top: 11%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-1 {
+  background-color: hsl(228, 56%, 26%);
+  padding: 1rem;
+  padding-right: 5rem;
+  border-radius: 5px;
+  border-top-right-radius: 70px;
+  margin-right: 1rem;
+}
+
+.card-body {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-image {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 5px;
+}
+
+.card-image img {
+  height: 20px;
+  max-width: 100% !important;
+}
+
+.sub_card {
+  background-color: hsl(228, 56%, 26%);
+  position: relative;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.index {
+  width: 130px;
+  padding: 1rem;
+  background-color: #fff;
+  position: absolute;
+  top: -40%;
+  right: 2rem;
+  border-radius: 7px;
+}
+
+.index::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -0.7rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.sub_card {
+  color: hsl(229, 7%, 55%);
+  font-weight: 400;
+}
+
+.sub_card p {
+  font-weight: 400;
+}
+
+.sub_card span {
+  font-weight: 700;
+  color: hsl(243, 100%, 93%);
+}
+
+.index p {
+  color: hsl(229, 7%, 55%);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.index span {
+  color: hsl(229, 57%, 11%);
+  font-weight: 700 !important;
+  font-size: 20px;
+  margin-right: 0.3rem;
+}
+
+.progress-bar {
+  margin-top: 1rem;
+  width: 400px;
+  height: 10px;
+  border-radius: 99px;
+  background-color: #fff;
+}
+
+.bar {
+  width: 70%;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 100%;
+  border-radius: 99px;
+}
+
+.container-capacity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-capacity p {
+  margin-top: 0.5rem;
+  color: hsl(243, 100%, 93%);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(229, 7%, 55%);
+}
+
+.attribution a {
+  color: hsl(243, 100%, 93%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background: url("./images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  main {
+    margin: 2rem;
+    padding-top: 40%;
+  }
+
+  .card-1 {
+    margin-right: 0;
+    padding: 2rem;
+  }
+
+  .card-1,
+  .card-2 {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .progress-bar,
+  .sub_card {
+    width: 100%;
+  }
+
+  .sub_card {
+    padding: 2rem;
+  }
+
+  .sub_card p {
+    text-align: center;
+  }
+
+  .index {
+    width: 140px;
+    padding: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    right: 4rem;
+    border-radius: 7px;
+  }
+
+  .index::before {
+    content: none;
+  }
+
+  .index p {
+    text-align: left;
+  }
+}
